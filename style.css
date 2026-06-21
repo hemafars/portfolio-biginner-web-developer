@@ -39,14 +39,6 @@ header p {
   }
 }
 
-.Icon {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
-  cursor: pointer;
-}
-
 ul {
   list-style-type: none;
 }
@@ -56,19 +48,21 @@ li {
 @media only screen and (max-width: 900px) {
   ul {
     display: none;
-    position: relative;
+            position: absolute;
+        background-color: #0284c7;
+        top: 90px;
+        left: 600px;
+        width: 200px;
   }
-  ul {
-    position: absolute;
-    background-color: #0284c7;
-    top: 45px;
-    left: 160px;
-    width: 200px;
+
+  header:hover ul {
+    display: block;
   }
-  nav a:visited {
+
+  ul a:visited {
     text-align: center;
   }
-  nav a {
+  ul a {
     color: black;
   }
   li {
@@ -78,21 +72,18 @@ li {
     border: 1px;
     border-style: solid;
     border-color: transparent transparent white transparent;
-  }ul:hover {
-  display: block;
-}
+  }
 }
 
 ul a:visited {
   color: white;
 }
 
-nav a {
+ul a {
   margin-left: 2rem;
   text-decoration: none;
   color: white;
 }
-/* nav a */
 
 header button {
   border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
