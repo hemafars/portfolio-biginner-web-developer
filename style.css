@@ -108,7 +108,11 @@ header button a i {
   width: 70%;
   margin: 9.375rem auto;
 }
-
+@media only screen and (min-width: 900px) {
+  body {
+    position: absolute;
+  }
+}
 .About {
   display: flex;
   height: 60%;
