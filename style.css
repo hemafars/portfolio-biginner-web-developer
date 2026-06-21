@@ -26,6 +26,13 @@ header p {
   font-weight: bold;
   font-style: normal;
 }
+ul{
+
+  list-style-type: none;
+}
+li {
+  float: left;
+}
 
 nav a:visited {
   color: white;
