@@ -50,10 +50,22 @@ li {
     display: none;
     position: absolute;
     background-color: #0284c7;
-    top: 91px;
-    left: 430px;
+    top: 7%;
+    left: 75%;
     width: 200px;
-  }
+  }}
+  @media (max-width: 375px) {
+  ul {
+    top: 7%;
+    left: 45%;
+    /* width: 200px; */
+  }}
+    @media (max-width: 414px) {
+  ul {
+    top: 7%;
+    left: 45%;
+    /* width: 200px; */
+  }}
 
   header:hover ul {
     display: block;
@@ -84,6 +96,11 @@ ul a {
   text-decoration: none;
   color: white;
 }
+/* @media (max-width: 768px) {
+  ul {
+    top: 50%;
+    left: 150%;
+  } */
 
 header button {
   border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
@@ -125,6 +142,12 @@ header button a i {
   width: 12.5rem;
   border-radius: 50%;
   height: 12.5rem;
+}
+@media(min-width:768px)
+{
+  .About img{
+    width: 100px;
+  }
 }
 .text p:first-child {
   color: #0284c7;
