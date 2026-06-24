@@ -4,6 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --font-size-Extra-small-devices: 14px;
+  --font-size-Medium-devices: 16px;
+  --font-size-Large-devices: 18px;
+  --font-size-Extra-large-devices: 20px;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -19,32 +25,75 @@ header {
   align-items: center;
   font-family: "Montserrat", sans-serif;
   z-index: 100;
+  padding: 0px 15px;
 }
-header p {
-  font-size: 2.5rem;
-  font-weight: bold;
-  font-style: normal;
+header img {
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  width: 11%;
+  height: auto;
 }
+ul {
+  list-style-type: none;
+  display: none;
+}
+li {
+  float: left;
+  padding: 15px;
+}
+li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.burgerIcon {
+  display: block;
+  font-size: 20px;
+}
+button {
+  border-radius: 10px 15px;
+  border: none;
+  padding: 10px;
+  font-size: var(--font-size-Extra-small-devices);
+}
+/* Extra small devices (phones, 600px and down) */
+/* الأجهزة الصغيرة جدًا (الهواتف، 600 بكسل وما دون) */
+@media only screen and (max-width: 600px) {
+  /*  it is difult  media */
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* الأجهزة الصغيرة (الأجهزة اللوحية العمودية والهواتف الكبيرة، 600 بكسل وما فوق) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+/* الأجهزة المتوسطة (الأجهزة اللوحية ذات الشاشة الأفقية، 768 بكسل وما فوق) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/* الأجهزة الكبيرة (أجهزة الكمبيوتر المحمولة/المكتبية، 992 بكسل وما فوق) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* الأجهزة الكبيرة جدًا (أجهزة الكمبيوتر المحمولة والمكتبية الكبيرة، 1200 بكسل وما فوق) */
+@media only screen and (min-width: 1200px) {
+}
+/* 
 /* @media only screen and (max-width: 900px) {
   header p {
     font-size: 16px;
   }
-} */
+} 
 .container {
   width: 100%;
 }
-@media only screen and (min-width: 900px) {
+@media (min-width: 900px) {
   .burgerIcon {
     display: none;
   }
 }
 
-ul {
-  list-style-type: none;
-}
-li {
-  float: left;
-}
+
 @media (max-width: 900px) {
   ul {
     display: none;
@@ -59,13 +108,14 @@ li {
     top: 7%;
     left: 45%;
     /* width: 200px; */
+/*
   }}
     @media (max-width: 414px) {
   ul {
     top: 7%;
     left: 45%;
     /* width: 200px; */
-  }}
+/*
 
   header:hover ul {
     display: block;
@@ -101,7 +151,7 @@ ul a {
     top: 50%;
     left: 150%;
   } */
-
+/*
 header button {
   border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
   border: 0.0625rem solid #0284c7;
@@ -113,6 +163,7 @@ header button {
 /* header button a {
     margin:1.25rem;
   } */
+/*
 header button a {
   color: #0284c7;
 }
@@ -121,6 +172,7 @@ header button a i {
 }
 
 /* start container stayle */
+/*
 .container {
   width: 70%;
   margin: 9.375rem auto;
@@ -204,6 +256,7 @@ header button a i {
 /* .Education h2 {
   margin-top: 1.25rem;
 } */
+/*
 .Education h2::before {
   content: "";
   position: absolute;
@@ -298,6 +351,7 @@ header button a i {
 /* .Education h2 {
   margin-top: 1.25rem;
 } */
+/*
 .Skills h2::before {
   content: "";
   position: absolute;
@@ -340,6 +394,7 @@ header button a i {
 /* .Education h2 {
   margin-top: 1.25rem;
 } */
+/*
 .CONTACT h2::before {
   content: "";
   position: absolute;
@@ -404,6 +459,7 @@ input[type="submit"] {
   border-radius: 5px;
 }
 /* End container stayle */
+/*
 .bodeContant {
   display: flex;
   justify-content: space-between;
@@ -411,4 +467,4 @@ input[type="submit"] {
 .social i {
   font-size: 40px;
   padding: 0 10px;
-}
+} */
