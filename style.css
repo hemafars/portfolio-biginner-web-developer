@@ -31,7 +31,7 @@ header img {
   padding: 10px;
   border: none;
   border-radius: 50%;
-  width: 11%;
+  width: 70px;
   height: auto;
 }
 ul {
@@ -47,6 +47,9 @@ li a {
   font-size: 20px;
   text-decoration: none;
 }
+li a:active {
+  color: #0284c7;
+}
 .burgerIcon {
   display: block;
   font-size: 20px;
@@ -60,7 +63,7 @@ button {
 /* Extra small devices (phones, 600px and down) */
 /* الأجهزة الصغيرة جدًا (الهواتف، 600 بكسل وما دون) */
 @media only screen and (max-width: 600px) {
-  /*  it is difult  media */
+  /*  t is default media */
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* الأجهزة الصغيرة (الأجهزة اللوحية العمودية والهواتف الكبيرة، 600 بكسل وما فوق) */
