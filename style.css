@@ -34,13 +34,23 @@ header img {
   width: 70px;
   height: auto;
 }
+.links {
+  position: relative;
+}
 ul {
   list-style-type: none;
   display: none;
 }
+
+.links:hover ul {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: -70px;
+}
 li {
-  float: left;
   padding: 15px;
+  background-color: #0284c7;
 }
 li a {
   color: white;
@@ -50,16 +60,27 @@ li a {
 li a:active {
   color: #0284c7;
 }
-.burgerIcon {
+
+header i {
   display: block;
   font-size: 20px;
+  cursor: pointer;
 }
-button {
+@media (max-width: 350px) {
+  .links:hover ul {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: -70px;
+  }
+}
+
+/* button {
   border-radius: 10px 15px;
   border: none;
   padding: 10px;
   font-size: var(--font-size-Extra-small-devices);
-}
+} */
 /* Extra small devices (phones, 600px and down) */
 /* الأجهزة الصغيرة جدًا (الهواتف، 600 بكسل وما دون) */
 @media only screen and (max-width: 600px) {
