@@ -109,6 +109,7 @@ main {
   height: 150px;
   border: none;
   border-radius: 50%;
+  display: none;
 }
 .details {
   margin: 10px;
