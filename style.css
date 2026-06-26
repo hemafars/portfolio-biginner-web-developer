@@ -87,12 +87,70 @@ header i {
   }
 }
 
-/* button {
+header button {
   border-radius: 10px 15px;
   border: none;
   padding: 10px;
   font-size: var(--font-size-Extra-small-devices);
-} */
+  display: none;
+}
+
+main {
+  padding: 10px;
+}
+.About {
+  margin: 10px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.About img {
+  width: 150px;
+  height: 150px;
+  border: none;
+  border-radius: 50%;
+}
+.details {
+  margin: 10px;
+  padding: 10px;
+}
+.text {
+  margin: 10px 0;
+  padding: 10px 0;
+  line-height: 1.1;
+}
+.Hire_Me,
+.Download_CV {
+  border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+  padding: 0.3125rem 0.625rem;
+  margin-right: 0.625rem;
+}
+.Hire_Me {
+  background-color: #0284c7;
+  border: 0.0625rem solid #0284c7;
+  color: white;
+}
+.Download_CV {
+  border: 0.0625rem solid #0284c7;
+  background-color: white;
+  color: #0284c7;
+}
+.buttons {
+  margin: 10px 0;
+  padding: 10px 0;
+}
+.social-icon {
+  padding-right: 10px;
+  font-size: 25px;
+}
+.buttons a {
+  text-decoration: none;
+  color: #0284c7;
+}
+.buttons a:visited {
+  color: #0284c7;
+}
+
 /* Extra small devices (phones, 600px and down) */
 /* الأجهزة الصغيرة جدًا (الهواتف، 600 بكسل وما دون) */
 @media only screen and (max-width: 600px) {
@@ -121,14 +179,13 @@ header i {
   header .icon {
     display: none;
   }
+  button {
+    display: block;
+  }
 }
 
 /* 
-/* @media only screen and (max-width: 900px) {
-  header p {
-    font-size: 16px;
-  }
-} 
+/* 
 .container {
   width: 100%;
 }
@@ -139,79 +196,14 @@ header i {
 }
 
 
-@media (max-width: 900px) {
-  ul {
-    display: none;
-    position: absolute;
-    background-color: #0284c7;
-    top: 7%;
-    left: 75%;
-    width: 200px;
-  }}
-  @media (max-width: 375px) {
-  ul {
-    top: 7%;
-    left: 45%;
-    /* width: 200px; */
-/*
-  }}
-    @media (max-width: 414px) {
-  ul {
-    top: 7%;
-    left: 45%;
-    /* width: 200px; */
-/*
 
-  header:hover ul {
-    display: block;
-  }
 
-  ul a:visited {
-    text-align: center;
-  }
-  ul a {
-    color: black;
-  }
-  li {
-    width: 100%;
-    margin: 10px;
-    padding: 10px;
-    border: 1px;
-    border-style: solid;
-    border-color: transparent transparent white transparent;
-  }
-}
 
-ul a:visited {
-  color: white;
-}
 
-ul a {
-  margin-left: 2rem;
-  text-decoration: none;
-  color: white;
-}
-/* @media (max-width: 768px) {
-  ul {
-    top: 50%;
-    left: 150%;
-  } */
-/*
-header button {
-  border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
-  border: 0.0625rem solid #0284c7;
-  background-color: white;
-  color: #0284c7;
-  padding: 0.3125rem 0.625rem;
-}
 
-/* header button a {
-    margin:1.25rem;
-  } */
-/*
-header button a {
-  color: #0284c7;
-}
+
+
+
 header button a i {
   color: green;
 }
