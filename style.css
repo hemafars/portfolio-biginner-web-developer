@@ -27,11 +27,14 @@ header {
   z-index: 100;
   padding: 0px 15px;
 }
+.logo {
+  display: flex;
+}
 header img {
   padding: 10px;
   border: none;
   border-radius: 50%;
-  width: 70px;
+  width: 100px;
   height: auto;
 }
 .links {
@@ -40,13 +43,13 @@ header img {
 ul {
   list-style-type: none;
   display: none;
+  top: 25px;
+  right: -50px;
+  position: absolute;
 }
 
-.links:hover ul {
+.icon:hover + ul {
   display: block;
-  position: absolute;
-  top: 50px;
-  right: -70px;
 }
 li {
   padding: 15px;
@@ -67,11 +70,20 @@ header i {
   cursor: pointer;
 }
 @media (max-width: 350px) {
-  .links:hover ul {
+  .icon:hover + ul {
     display: block;
     position: absolute;
-    top: 50px;
+    top: 25px;
     right: -70px;
+  }
+  .logo text {
+    font-size: 40px;
+  }
+  header img {
+    width: 75px;
+  }
+  .links:hover ul {
+    right: -10px;
   }
 }
 
@@ -101,7 +113,16 @@ header i {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* الأجهزة الكبيرة جدًا (أجهزة الكمبيوتر المحمولة والمكتبية الكبيرة، 1200 بكسل وما فوق) */
 @media only screen and (min-width: 1200px) {
+  ul {
+    list-style-type: none;
+    display: flex;
+    position: unset;
+  }
+  header .icon {
+    display: none;
+  }
 }
+
 /* 
 /* @media only screen and (max-width: 900px) {
   header p {
