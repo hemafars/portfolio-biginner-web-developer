@@ -132,6 +132,12 @@ main {
   border: 0.0625rem solid #0284c7;
   color: white;
 }
+.Hire_Me a {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
 .Download_CV {
   border: 0.0625rem solid #0284c7;
   background-color: white;
@@ -145,11 +151,11 @@ main {
   padding-right: 10px;
   font-size: 25px;
 }
-.buttons a {
+.Download_CV .buttons a {
   text-decoration: none;
   color: #0284c7;
 }
-.buttons a:visited {
+.Download_CV .buttons a:visited {
   color: #0284c7;
 }
 
