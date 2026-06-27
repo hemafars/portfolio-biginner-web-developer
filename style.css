@@ -171,6 +171,10 @@ a {
 /* Medium devices (landscape tablets, 768px and up) */
 /* الأجهزة المتوسطة (الأجهزة اللوحية ذات الشاشة الأفقية، 768 بكسل وما فوق) */
 @media only screen and (min-width: 768px) {
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 /* الأجهزة الكبيرة (أجهزة الكمبيوتر المحمولة/المكتبية، 992 بكسل وما فوق) */
@@ -187,8 +191,8 @@ a {
   header .icon {
     display: none;
   }
-  button {
-    display: block;
+  .buttons {
+    display: flex;
   }
 }
 
