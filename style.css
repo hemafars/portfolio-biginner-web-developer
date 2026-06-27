@@ -188,6 +188,10 @@ a {
 /* Large devices (laptops/desktops, 992px and up) */
 /* الأجهزة الكبيرة (أجهزة الكمبيوتر المحمولة/المكتبية، 992 بكسل وما فوق) */
 @media only screen and (min-width: 992px) {
+  .About img {
+    display: block;
+    margin-top: -60px;
+  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* الأجهزة الكبيرة جدًا (أجهزة الكمبيوتر المحمولة والمكتبية الكبيرة، 1200 بكسل وما فوق) */
