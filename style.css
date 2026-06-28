@@ -256,6 +256,123 @@ a {
   top: 100px;
   position: relative;
 }
+.Skills {
+  margin: 6.25rem 0;
+  padding: 1.25rem;
+  align-items: center;
+  text-align: center;
+  height: 18.75rem;
+}
+.Skills .header {
+  position: relative;
+}
+.Education h2 {
+  margin-top: 1.25rem;
+}
+
+.Skills h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  height: 0.125rem;
+  background-color: black;
+  bottom: -0.125rem;
+  width: 4.5rem;
+}
+.Skills h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 0.125rem solid black white;
+  background-color: black;
+  border-radius: 50%;
+  height: 0.875rem;
+  bottom: -0.5625rem;
+  width: 15px;
+}
+
+.Skills-icons i {
+  font-size: 100px;
+  margin: 0px 50px;
+}
+.CONTACT {
+  margin: 6.25rem 0;
+  padding: 1.25rem;
+  align-items: center;
+  text-align: center;
+  height: 18.75rem;
+}
+.CONTACT .header {
+  position: relative;
+}
+/* .Education h2 {
+  margin-top: 1.25rem;
+} */
+
+.CONTACT h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  height: 0.125rem;
+  background-color: black;
+  bottom: -0.125rem;
+  width: 4.5rem;
+}
+.CONTACT h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 0.125rem solid black;
+  background-color: black;
+  border-radius: 50%;
+  height: 0.875rem;
+  bottom: -0.5625rem;
+  width: 15px;
+}
+.bodeContant {
+  display: flex;
+  justify-content: center;
+}
+form {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 10px 10px black;
+  border-radius: 5px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .CONTACT form {
+    width: fit-content;
+    display: flex;
+  }
+  .bodeContant img {
+    display: none;
+  }
+}
+label {
+  display: block;
+}
+input {
+  padding: 10px;
+  color: #334155;
+}
+input[type="submit"] {
+  margin: 20px 0;
+  background-color: #0284c7;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
 
 /* Extra small devices (phones, 600px and down) */
 /* الأجهزة الصغيرة جدًا (الهواتف، 600 بكسل وما دون) */
@@ -284,6 +401,12 @@ a {
   .left::after,
   .right::after {
     display: none;
+  }
+  .Skills {
+    height: 27.75rem;
+  }
+  .CONTACT {
+    margin: 11.25rem 0;
   }
 
   /* .left::before {
@@ -436,126 +559,8 @@ header button a i {
 }
 
 
-.Skills {
-  margin: 6.25rem 0;
-  padding: 1.25rem;
-  align-items: center;
-  text-align: center;
-  height: 18.75rem;
-}
-.Skills .header {
-  position: relative;
-}
-/* .Education h2 {
-  margin-top: 1.25rem;
-} */
-/*
-.Skills h2::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  height: .125rem;
-  background-color: black;
-  bottom: -0.125rem;
-  width: 4.5rem;
-}
-.Skills h2::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  border: .125rem solid black white;
-  background-color: black;
-  border-radius: 50%;
-  height: .875rem;
-  bottom: -0.5625rem;
-  width: 15px;
-}
-.Skills-icons {
-  margin: 100px 0;
-}
-.Skills-icons i {
-  font-size: 100px;
-  margin: 0px 50px;
-}
-.CONTACT {
-  margin: 6.25rem 0;
-  padding: 1.25rem;
-  align-items: center;
-  text-align: center;
-  height: 18.75rem;
-}
-.CONTACT .header {
-  position: relative;
-}
-/* .Education h2 {
-  margin-top: 1.25rem;
-} */
-/*
-.CONTACT h2::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  height: .125rem;
-  background-color: black;
-  bottom: -0.125rem;
-  width: 4.5rem;
-}
-.CONTACT h2::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  border: .125rem solid black;
-  background-color: black;
-  border-radius: 50%;
-  height: .875rem;
-  bottom: -0.5625rem;
-  width: 15px;
-}
-form {
-  border: 1px solid black;
-  margin: 20px;
-  padding: 10px;
-  box-shadow: 0 10px 10px black;
-  border-radius: 5px;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  height: 300px;
-  justify-content: center;
-}
-@media (max-width: 768px) {
-  .bodeContant {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .CONTACT form {
-    width: fit-content;
-    display: flex;
-  }
-  .bodeContant img {
-    width: 100%;
-  }
-}
-label {
-  display: block;
-}
-input {
-  padding: 10px;
-  color: #334155;
-}
-input[type="submit"] {
-  margin: 20px 0;
-  background-color: #0284c7;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-}
+
+
 /* End container stayle */
 /*
 .bodeContant {
