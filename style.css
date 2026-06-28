@@ -257,11 +257,11 @@ a {
   position: relative;
 }
 .Skills {
-  margin: 6.25rem 0;
+  margin: 10px;
   padding: 1.25rem;
   align-items: center;
   text-align: center;
-  height: 18.75rem;
+  height: 160px;
 }
 .Skills .header {
   position: relative;
@@ -373,6 +373,48 @@ input[type="submit"] {
   border: none;
   border-radius: 5px;
 }
+.My_works {
+  margin: 10px;
+  padding: 1.25rem;
+  align-items: center;
+  text-align: center;
+}
+.My_works .header {
+  position: relative;
+}
+.My_works h2 {
+  margin-top: 1.25rem;
+}
+
+.My_works h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  height: 0.125rem;
+  background-color: black;
+  bottom: -0.125rem;
+  width: 4.5rem;
+}
+.My_works h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 0.125rem solid black white;
+  background-color: black;
+  border-radius: 50%;
+  height: 0.875rem;
+  bottom: -0.5625rem;
+  width: 15px;
+}
+.box-My_works {
+  width: 90%;
+  height: auto;
+  background-color: #0284c7;
+  margin: 10px auto;
+  padding: 10px;
+}
 
 /* Extra small devices (phones, 600px and down) */
 /* الأجهزة الصغيرة جدًا (الهواتف، 600 بكسل وما دون) */
@@ -406,7 +448,7 @@ input[type="submit"] {
     height: 27.75rem;
   }
   .CONTACT {
-    margin: 11.25rem 0;
+    margin: 10px;
   }
 
   /* .left::before {
@@ -445,6 +487,11 @@ input[type="submit"] {
   .About img {
     display: block;
     margin-top: -60px;
+  }
+  .Skills-icons i {
+    font-size: 60px;
+    margin: 25px 50px;
+    padding: 10px;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
