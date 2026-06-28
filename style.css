@@ -43,14 +43,14 @@ header img {
 ul {
   list-style-type: none;
   display: none;
-  top: 25px;
-  right: -50px;
+  top: 102px;
+  right: 6px;
   position: absolute;
 }
 
-.icon:hover + ul {
+/* .icon:hover + ul {
   display: block;
-}
+} */
 li {
   padding: 15px;
   background-color: #0284c7;

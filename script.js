@@ -1,8 +1,8 @@
-const link = document.getElementById("link");
+const ul = document.getElementById("link");
 function togglemenu() {
-  if (link.style.display === "block") {
-    link.style.display === "none";
+  if (ul.style.display === "block") {
+    ul.style.display = "none";
   } else {
-    link.style.display === "block";
+    ul.style.display = "block";
   }
 }
